@@ -37,10 +37,10 @@ def main(args, ) -> None:
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', '-c', type=str, )
-    parser.add_argument('--resume', '-r', type=str, )
-    parser.add_argument('--tuning', '-t', type=str, )
-    parser.add_argument('--test-only', action='store_true', default=False,)
+    parser.add_argument('--config', '-c', default='configs/rtdetr/rtdetr_r101vd_6x_coco.yml', type=str, )
+    parser.add_argument('--resume', '-r', default='models/rtdetr_r101vd_2x_coco_objects365_from_paddle.pth', type=str, )
+    parser.add_argument('--tuning', '-t', type=str)
+    parser.add_argument('--test-only', action='store_true')
     parser.add_argument('--amp', action='store_true', default=False,)
 
     args = parser.parse_args()

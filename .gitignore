@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# VSCode project settings
+.vscode/
+
 # Distribution / packaging
 .Python
 build/
@@ -167,3 +170,5 @@ cython_debug/
 *.onnx
 rtdetr_pytorch/output/*
 rtdetr_pytorch/dataset/*
+RTDETR_outputs*/
+rtdetr_pytorch/models/*

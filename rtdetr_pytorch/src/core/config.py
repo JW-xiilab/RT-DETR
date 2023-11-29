@@ -42,9 +42,9 @@ class BaseConfig(object):
 
         self.batch_size :int = None
         self._train_batch_size :int = None
-        self._val_batch_size :int = None
-        self._train_shuffle: bool = None  
-        self._val_shuffle: bool = None 
+        self._val_batch_size :int = 1
+        self._train_shuffle: bool = True  
+        self._val_shuffle: bool = True 
 
         self.evaluator :Callable[[nn.Module, DataLoader, str], ] = None
 
